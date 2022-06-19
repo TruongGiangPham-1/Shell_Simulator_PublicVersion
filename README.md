@@ -13,7 +13,7 @@ Learning process management in C/C++.
     example: `cdir $HOME/document` \
 2. `pdir`: prints the path of the current directory
 3. `lstasks`: list all the processes that were executed by `run` command
-4. `run <programName> arg1 .. arg4`: runs <programName> with their argument. Implemented using fork() and execlp(). <programName> becomes a task
+4. `run <programName> arg1 .. arg4`: runs <programName> with their argument. Implemented using fork() and execlp(). <programName> becomes a task\
     example: `run xclock -geometry 200x200`
 5. `stop taskNumber`: stops the task using SIGSTOP
 6. `continue taskNumber`: conitune the tasks that were stopped
