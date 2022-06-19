@@ -491,7 +491,7 @@ int main() {
         vector<string>tokens;             // list of command line tokens
         int INDEX = 0;
         string s;                         // s == input string
-        printf("msh379 [%d] ", parentID);
+        printf("Shell [%d] ", parentID);
         getline(cin,s);
         SplitString(s, tokens);           // split s into tokens vector
 
@@ -565,16 +565,16 @@ int main() {
                     printf("task %d terminated\n", task_list[i].task_pid);
                 }
             }
-            goto fininishC379;
+            goto fininishShell;
         } else if (tokens[0] == "quit") {
             // terminate without killing head processes
-            goto fininishC379;
+            goto fininishShell;
         } else {
             printf("command: %s  is invalid\n", tokens[0].c_str());
         }
     }
 
-    fininishC379:
+    fininishShell:
     if ((end = times(&tmsend)) == -1 ) {
         cout << "end time error" << endl;
     }
